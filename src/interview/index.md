@@ -40,6 +40,7 @@
  
  
  3.填写输出的值
+
 ```js
    var obj = {
      name: 'baidu',
@@ -68,6 +69,7 @@
    console.log(obj.arr === obj2.arr) // true
    console.log(obj.arr === arr) // false
 ```
+
 **正确答案**
 
 ```js
@@ -86,7 +88,9 @@
 >如果改成arr.push('d'), 那么arr，obj和obj2中的arr都将是['a', 'b', 'c', 'd']
 
  4.    填写输出的值
+
   ```js
+
  var MAP =  {
      onclick: function () {
  
@@ -109,8 +113,10 @@
    console.log(a(300))                
    console.log(fn(100)(200))          
    console.log(getInfo('curry')(100)(300))
+
  ```
  **我的答案**
+
  ```js
   console.log(a(200)) // 300       
   console.log(a(300)) // 401        
@@ -133,6 +139,7 @@
 >fn(100)(200) 和a(200)一样，但是
 
  5.   原生js给li添加点击事件, 且弹出li的索引值
+
   ```html
   <ul id="list">
      <li>a</li>
@@ -144,7 +151,9 @@
  
  
  6.    填写问号中的值
+
   ```js
+
   var name = 'oop'
  
    var Person = function (options) {
@@ -188,11 +197,11 @@ console.log(p.__proto__ === Person.prototype) // true
 console.log(p.hasOwnProperty('name')) // ? // true
 console.log(p.hasOwnProperty('getName')) // ?  // false
 
-  var getName = p.getName
+var getName = p.getName
 
-  console.log(getName === Person.getName) // ?  // false
+console.log(getName === Person.getName) // ?  // false
 
-  console.log(getName()) // ? // inke
+console.log(getName()) // ? // inke
 console.log(Person.prototype.getName()) // ?  // iron man
 console.log(p.getName()) // ?  inke
 console.log(Person.getName()) //？ 'iron man'
@@ -217,7 +226,6 @@ console.log(Person.prototype.getName()) // ?  // iron man
 console.log(p.getName()) // ?  inke
 console.log(Person.getName()) //？ Person  x
  ```
->
 
  
 //  7.    实现一个inhreit 函数, 具备能够使Man函数继承Person函数的”所有”能力, 注意这个inhreit函数是一个可”复用”的函数
