@@ -12,15 +12,15 @@
 ```
  
  **方法一 flex布局**
- ```css
+```css
 .container{
   display: flex;
   justify-content: center;
   align-items: center;
 }
- ```
+```
  **方法一 定位**
- ```css
+```css
 .container{
   position:relative;
 }
@@ -30,7 +30,7 @@
   left:0;
   transform: translate(-50%);
 }
- ```
+```
 
 
 
@@ -114,24 +114,24 @@
    console.log(fn(100)(200))          
    console.log(getInfo('curry')(100)(300))
 
- ```
+```
  **我的答案**
 
- ```js
+```js
   console.log(a(200)) // 300       
   console.log(a(300)) // 401        
   console.log(fn(100)(200)) // 302         
   console.log(getInfo('curry')(100)(300)) // 403
- ```
+```
 
 **正确答案**
 
- ```js
+```js
   console.log(a(200)) // 300       
   console.log(a(300)) // 401        
   console.log(fn(100)(200)) // 300        
   console.log(getInfo('curry')(100)(300)) // 400
- ```
+```
 
 >函数柯理化
 >a(200), 其实就相当于是fn(100)(200), val++ 先用后加  也就是100+200=300
@@ -147,13 +147,12 @@
      <li>c</li>
      <li>d</li>
    </ul>
- ```
+```
  
  
  6.    填写问号中的值
 
-  ```js
-
+```js
   var name = 'oop'
  
    var Person = function (options) {
@@ -185,12 +184,11 @@
  console.log(Person.prototype.getName()) // ? 
  console.log(p.getName()) // ? 
  console.log(Person.getName()) //？
- ```
+```
 
 **我的答案**
 
- ```js
-
+```js
 console.log(p.constructor ===  Person.prototype) // true
 console.log(p instanceof Person) // true
 console.log(p.__proto__ === Person.prototype) // true
@@ -205,11 +203,11 @@ console.log(getName()) // ? // inke
 console.log(Person.prototype.getName()) // ?  // iron man
 console.log(p.getName()) // ?  inke
 console.log(Person.getName()) //？ 'iron man'
- ```
+```
 
 **正确答案**
 
- ```js
+```js
 
 console.log(p.constructor ===  Person) // true x  constructor 指向的是其构造函数
 console.log(p instanceof Person) // true
@@ -225,7 +223,7 @@ console.log(p.hasOwnProperty('getName')) // ?  // false
 console.log(Person.prototype.getName()) // ?  // iron man
 console.log(p.getName()) // ?  inke
 console.log(Person.getName()) //？ Person  x
- ```
+```
 
  
 //  7.    实现一个inhreit 函数, 具备能够使Man函数继承Person函数的”所有”能力, 注意这个inhreit函数是一个可”复用”的函数
@@ -282,7 +280,7 @@ console.log(Person.getName()) //？ Person  x
 
  
 //  8.依次输出console的值
- ```js
+```js
  const promise = Promise.resolve('fe').then(res => {
    console.log(res);
    return promise2;
@@ -312,11 +310,11 @@ console.log(Person.getName()) //？ Person  x
  })
  
  console.log('ke');
- ```
+```
 
  **答案**
 
- ```js
+```js
 in
 ke
 fe
@@ -324,4 +322,4 @@ fe
 2
 7
 res:  undefined
- ```
+```
