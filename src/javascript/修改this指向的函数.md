@@ -1,5 +1,4 @@
 >new call, apply，bind 一直是面试的重点
-
 # new
 
 >new的目的就是创建了一个实例。实例的创建过程，也就是new的过程。
@@ -198,4 +197,5 @@ Function.prototype.bind2 = function (context) {
 ```
 
 因为调用bind的必须是一个函数，大佬考虑了函数是构造函数的情况。
+
 
